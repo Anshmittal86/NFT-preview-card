@@ -1,0 +1,191 @@
+:root {
+
+    /* Primary Color  */
+    --clr-primary-500: hsl(215, 51%, 70%);
+    --clr--primary-100: hsl(178, 100%, 50%);
+
+    /* Neutral color  */
+    --clr-main-bg-neutral-900: hsl(217, 54%, 11%);
+    --clr-card-bg-neutral-800: hsl(216, 50%, 16%);
+    --clr-line-neutral-700: hsl(215, 32%, 27%);
+    --clr-text: hsl(0, 0%, 100%);
+
+    /* Font Family */
+    --font-family: 'Outfit', sans-serif;
+
+    /* Font weights */
+    --fw-300: 300;
+    --fw-400: 400;
+    --fw-600: 600;
+
+}
+
+html {
+    font-size: 18px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    box-sizing: border-box;
+}
+
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    font-family: var(--font-family);
+    font-weight: var(--fw-300);
+    font-size: 1rem;
+    background-color: var(--clr-main-bg-neutral-900);
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+
+article {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: var(--clr-card-bg-neutral-800);
+    max-width: 350px;
+}
+
+img[alt="Equilibrium Image"] {
+    border-radius: 1rem;
+    height: auto;
+}
+
+.equilibrium-image {
+    position: relative;
+    border-radius: 1rem;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: inherit;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: hsl(178, 100%, 30%);
+    border-radius: 1rem;
+}
+
+img[alt="view icon"] {
+    color: white;
+    font-size: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 111;
+}
+
+.equilibrium-image:hover .overlay {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+
+h2 {
+    color: var(--clr-text);
+    font-size: 1.2rem;
+    font-weight: var(--fw-600);
+    margin-block: 1rem;
+}
+
+h2:hover {
+    cursor: pointer;
+    color: var(--clr--primary-100);
+}
+
+p {
+    color: var(--clr-primary-500);
+    font-weight: var(--fw-400);
+    margin-block-end: 1rem;
+}
+
+.left-time-row {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.left-time-row span {
+    color: var(--clr--primary-100);
+    font-weight: var(--fw-400);
+}
+
+hr {
+    color: var(--clr-line-neutral-700);
+}
+
+.author {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    margin-block-start: 1rem;
+}
+
+.author div {
+    width: 2rem;
+}
+
+.author div img {
+    border-radius: 100%;
+    border: 2px solid var(--clr-text);
+}
+
+.author p {
+    margin-inline-start: 1rem;
+    margin-block-start: 0.2rem;
+}
+
+.author p span {
+    color: var(--clr-text);
+}
+
+.author p span:hover {
+    cursor: pointer;
+    color: var(--clr--primary-100);
+}
+
+@media screen and (min-width: 30em) {
+
+    article {
+        margin: auto;
+
+    }
+
+
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: var(--clr-text);
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
