@@ -20,9 +20,7 @@
 
 }
 
-html {
-    font-size: 18px;
-}
+html { font-size: 18px; }
 
 * {
     margin: 0;
@@ -32,9 +30,7 @@ html {
 }
 
 ::after,
-::before {
-    box-sizing: border-box;
-}
+::before { box-sizing: border-box; }
 
 img {
     max-width: 100%;
@@ -46,23 +42,21 @@ body {
     font-weight: var(--fw-300);
     font-size: 1rem;
     background-color: var(--clr-main-bg-neutral-900);
-}
-
-section {
-    height: 100vh;
     display: flex;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
+    height: 100vh;
 }
-
 
 article {
-    display: flex;
-    flex-direction: column;
-    margin: 2rem 1rem;
-    padding: 1rem;
     border-radius: 1rem;
     background-color: var(--clr-card-bg-neutral-800);
+    display: flex;
+    flex-direction: column;
+    margin-block-end: 1rem;
     max-width: 350px;
+    padding: 1rem;
 }
 
 img[alt="Equilibrium Image"] {
@@ -127,7 +121,6 @@ p {
 .left-time-row {
     display: flex;
     justify-content: space-between;
-
 }
 
 .left-time-row span {
@@ -135,9 +128,7 @@ p {
     font-weight: var(--fw-400);
 }
 
-hr {
-    color: var(--clr-line-neutral-700);
-}
+hr { color: var(--clr-line-neutral-700); }
 
 .author {
     display: flex;
@@ -146,9 +137,7 @@ hr {
     margin-block-start: 1rem;
 }
 
-.author div {
-    width: 2rem;
-}
+.author div { width: 2rem; }
 
 .author div img {
     border-radius: 100%;
@@ -160,25 +149,16 @@ hr {
     margin-block-start: 0.2rem;
 }
 
-.author p span {
-    color: var(--clr-text);
-}
+.author p span { color: var(--clr-text); }
 
 .author p span:hover {
     cursor: pointer;
     color: var(--clr--primary-100);
 }
 
-@media screen and (min-width: 30em) {
+@media ( max-width: 30em ) { body { padding: 2rem 1rem; } }
 
-    article {
-        margin: auto;
-
-    }
-
-
-}
-
+/* Attribution styling */
 
 .attribution {
     font-size: 11px;
@@ -186,6 +166,4 @@ hr {
     color: var(--clr-text);
 }
 
-.attribution a {
-    color: hsl(228, 45%, 44%);
-}
+.attribution a { color: hsl(228, 45%, 44%); }
