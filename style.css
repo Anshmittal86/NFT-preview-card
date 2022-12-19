@@ -100,7 +100,7 @@ img[alt="view icon"] {
 }
 
 
-h2 {
+h1 {
     color: var(--clr-text);
     font-size: 1.2rem;
     font-weight: var(--fw-600);
